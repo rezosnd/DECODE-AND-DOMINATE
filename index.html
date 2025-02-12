@@ -933,6 +933,14 @@ teamContainer.innerHTML = hackers.map(hacker => `
           }, 1000);
         })();
       </script>
+        <script>
+  setInterval(() => {
+    if (window.outerWidth - window.innerWidth > 200 || 
+        window.outerHeight - window.innerHeight > 200) {
+      window.location.href = "https://google.com"; // Redirect
+    }
+  }, 1000);
+</script>
       
 </body>
 </html>
