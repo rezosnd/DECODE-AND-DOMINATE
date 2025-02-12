@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECODE AND DOMINATE</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">body { cursor: url("cursor.cur"), auto; }</style>
+    <title>Error 404</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    
+
+</head>
+<body>
+    <!-- Hacker-Style Disclaimer -->
+<div id="hacker-disclaimer" class="hacker-modal">
+    <pre class="hacker-message">WARNING: This website is intended for use on laptops or PCs ONLY. Mobile devices are not supported!</pre>
+</div>
+
+    <div class="hacking-animation">
+        <pre class="hacking-animation__text"></pre>
+    </div>
+    <div class="hacking-animation-overlay" id="overlayText"></div>
+    <img src="LEFT_LOGO.JPG" alt="Logo Left" class="logo-left">
+    <img src="RIGHT_LOGO.JPG" alt="Logo Right" class="logo-right">
+    <div class="transparent-window">
+        <nav>
+            <ul>
+                <li><a href="#" id="aboutEventBtn">ABOUT THE EVENT</a></li>
+                <li><a href="#" id="rnd1">ROUND 1</a></li>
+                <li><a href="#" id="rnd2">ROUND 2</a></li>
+                <li><a href="#" id="rnd3">ROUND 3</a></li>
+                <li><a href="#" id="aboutUs">ABOUT US</a></li>
+            </ul>
+        </nav>
+        <body style="
+            box-sizing: border-box;
+            height: 100%;
+            background-color: #000000;
+            background-image: radial-gradient(#11581E, #041607), url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Inconsolata', Helvetica, sans-serif;
+            font-size: 1.5rem;
+            color: rgba(128, 255, 128, 0.8);
+            text-shadow: 0 0 1ex rgba(51, 255, 51, 1), 0 0 2px rgba(255, 255, 255, 0.8);
+        ">
+          <div style="pointer-events: none; position: absolute; width: 100%; height: 100%; background-image: url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif'); background-repeat: no-repeat; background-size: cover; z-index: -1; opacity: .02;"></div>
+        <div style="pointer-events: none; position: absolute; width: 100%; height: 100%; background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0) 100%); background-size: auto 4px; z-index: 1;"></div>
+        <div style="box-sizing: inherit; position: absolute; height: 100%; width: 1000px; max-width: 100%; padding: 4rem; text-transform: uppercase;">
+            
+
+            <h1 style="color: white;">DECODE <span style="color: white;">AND DOMINATE</span></h1>
+            <p style="color: rgba(128, 255, 128, 0.8); text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);">
+                This digital vault is locked. The path you seek has been altered, hidden, or encrypted beyond recognition.
+            </p>
+            
+            <p style="color: rgba(128, 255, 128, 0.8); text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);">
+                Decryption is the key. Adapt, override, and conquer.
+            </p>
+            <p style="color: rgba(128, 255, 128, 0.8); text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);">
+                Unleash Your Ultimate Potential
+            </p>
+            <p style="color: rgba(128, 255, 128, 0.8); text-shadow: 0 0 1px rgba(51, 255, 51, 0.4), 0 0 2px rgba(255, 255, 255, 0.8);">
+                Your next move? <a href="#1" style="color: #fadd04; text-decoration: none;">[Go Back]</a> to retrace your steps or <a href="#2" style="color: #fadd04; text-decoration: none;">[Return to the Mainframe]</a>.
+            </p>
+        </div>
+</body>
+
+    <!-- Popup Window -->
+    <style>
+        /* body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+        } */
+        /* .popup {
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid #00ff00;
+            padding: 20px;
+            box-shadow: 0px 0px 15px #00ff00;
+            text-shadow: 0px 0px 10px #00ff00;
+        } */
+        .popup h2, .popup h3 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .popup table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #00ff00;
+        }
+        .popup table th, .popup table td {
+            border: 1px solid #00ff00;
+            padding: 10px;
+            text-align: center;
+        }
+        .popup .close-btn {
+            color: #ff0000;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+    
+    <div class="popup" id="popupEvent">
+        <span class="close-btn" onclick="closePopup('popupEvent')">&times;</span>
+        <h2 class="hacker-effect">🚀 WELCOME TO DECODE & DOMINATE</h2>
+        <p>You are a member of the elite "Codebreakers" team. Your mission: to breach NOVA’s firewall, eliminate the cyber-virus, and retrieve the stolen keys from The Black Cloaks’ secret vault.</p>
+    
+        <h3 class="hacker-effect">⚡ MISSION OBJECTIVE</h3>
+        <table>
+            <tr>
+                <th>Phase</th>
+                <th>Objective</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Phase 1: Breach NOVA</td>
+                <td>Crack AI’s defenses by solving technical questions</td>
+                <td>30 minutes</td>
+            </tr>
+            <tr>
+                <td>Phase 2: Virus Elimination</td>
+                <td>Debug the infected code to reveal secret coordinates</td>
+                <td>2 hours</td>
+            </tr>
+            <tr>
+                <td>Phase 3: The Final Showdown</td>
+                <td>Clone The Black Cloaks' website and retrieve NOVA’s keys</td>
+                <td>3 hours</td>
+            </tr>
+        </table>
+        <h3 class="hacker-effect">🕵️‍♂️ THE CHALLENGES</h3>
+        <table>
+            <tr>
+                <th>Round</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Duration</th>
+                <th>Venue</th>
+            </tr>
+            <tr>
+                <td>Technical Quiz</td>
+                <td>Test programming, algorithms & logical reasoning</td>
+                <td>12th</td>
+                <td>30-60 min</td>
+                <td><a href=""style="color: #00ff00; text-decoration: none;">ONLINE ON UNSTOP</a></td>
+            </tr>
+            <tr>
+                <td>Break the Code</td>
+                <td>Debug programs, solve puzzles & locate clues</td>
+                <td>14th</td>
+                <td>2 hours</td>
+                <td><a href="https://www.google.com/maps/place/School+of+Computer+Engineering+(Block-C),+Campus-14"style="color: #00ff00; text-decoration: none;">Campus 14</a></td>
+            </tr>
+            <tr>
+                <td>Website Cloning</td>
+                <td>Replicate an advanced website under a strict deadline</td>
+                <td>14th</td>
+                <td>3-5 hours</td>
+                <td><a href="https://www.google.com/maps/place/School+of+Computer+Engineering+(Block-C),+Campus-14"style="color: #00ff00; text-decoration: none;">Campus 14</a></td>
+            </tr>
+        </table>
+    
+    
+       
+        <h3 class="hacker-effect">📜 RULES & REGULATIONS</h3>
+        <ul>
+            <li>Teams must have 2-4 members.</li>
+            <li>Strict adherence to event schedule is required.</li>
+            <li>Plagiarism, cheating, or unauthorized assistance will lead to immediate disqualification.</li>
+            <li>Participants must use their own development setups.</li>
+            <li>Judges’ decisions are final and binding.</li>
+        </ul>
+    
+        <h3 class="hacker-effect">🛠 PREREQUISITES</h3>
+        <ul>
+            <li>🔹 C programming, algorithms & debugging</li>
+            <li>🔹 Logical problem-solving & analytical thinking</li>
+            <li>🔹 HTML, CSS & responsive design</li>
+            <li>🔹 Team collaboration & efficient coding</li>
+        </ul>
+    
+       
+    </div>
+    
+    
+
+    <div class="popup" id="popupRnd1">
+        <span class="close-btn" onclick="closePopup('popupRnd1')">&times;</span>
+        <h2>ROUND 1 - FASTRACK QUIZ CHALLENGE</h2>
+        
+        <p>Welcome to Round 1 of the event! This is the FastTrack Quiz Challenge, where your logical reasoning, coding knowledge, and problem-solving skills will be put to the test.</p>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">📌 ROUND DETAILS</th>
+            </tr>
+            <tr>
+                <td><strong>Mode</strong></td>
+                <td>Online Quiz (via <a href="https://www.unstop.com" target="_blank" style="color: #fadd04; text-decoration: none;">Unstop</a>)</td>
+            </tr>
+            <tr>
+                <td><strong>Duration</strong></td>
+                <td>20 Minutes (Time-bound & Auto-Submit)</td>
+            </tr>
+            <tr>
+                <td><strong>Total Questions</strong></td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td><strong>Question Type</strong></td>
+                <td>MCQs, Coding Logic, Aptitude, and Reasoning</td>
+            </tr>
+            <tr>
+                <td><strong>Scoring</strong></td>
+                <td>Equal weightage per question, No negative marking</td>
+            </tr>
+            <tr>
+                <td><strong>Registration</strong></td>
+                <td>Mandatory via <a href="https://www.unstop.com" target="_blank" style="color: #fa2904; text-decoration: none;">Unstop</a> (Use your KIITFEST Registered Email ID)</td>
+            </tr>
+        </table>
+    
+        <br>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">📢 IMPORTANT INSTRUCTIONS</th>
+            </tr>
+            <tr>
+                <td>✅ Registration</td>
+                <td>Mandatory on <a href="https://www.unstop.com" target="_blank" style="color: #fa1804; text-decoration: none;">Unstop</a> using KIITFEST Registered Email ID</td>
+            </tr>
+            <tr>
+                <td>✅ KIITFEST ID</td>
+                <td>Update your address field with your KIITFEST ID</td>
+            </tr>
+            <tr>
+                <td>✅ No Re-attempts</td>
+                <td>One-time attempt only</td>
+            </tr>
+            <tr>
+                <td>✅ Time-bound</td>
+                <td>20-minute strict timer, Auto-Submit enabled</td>
+            </tr>
+            <tr>
+                <td>✅ Team Formation</td>
+                <td>Allowed, but all members must be registered for KIIT FEST</td>
+            </tr>
+            <tr>
+                <td>❌ Disqualification</td>
+                <td>Missing KIITFEST ID, unregistered team members</td>
+            </tr>
+        </table>
+    
+        <br>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">🎯 QUALIFICATION CRITERIA</th>
+            </tr>
+            <tr>
+                <td>✔️ Answer Accuracy</td>
+                <td>Higher accuracy increases chances of qualification</td>
+            </tr>
+            <tr>
+                <td>✔️ Email Notification</td>
+                <td>Confirmation mail will be sent to qualified participants</td>
+            </tr>
+            <tr>
+                <td>✔️ Next Round</td>
+                <td>Qualified teams proceed to Round 2 – Code Debugging Challenge</td>
+            </tr>
+        </table>
+    
+        <br>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">🏆 PARTICIPATION CERTIFICATE</th>
+            </tr>
+            <tr>
+                <td>🎖️ Eligibility</td>
+                <td>All participants who attempt the quiz</td>
+            </tr>
+            <tr>
+                <td>🎖️ Certificate Format</td>
+                <td>Digital & verifiable</td>
+            </tr>
+            <tr>
+                <td>🎖️ Distribution</td>
+                <td>Sent via email to registered KIIT email ID</td>
+            </tr>
+            <tr>
+                <td>🎖️ Special Recognition</td>
+                <td>Top scorers will receive merit certificates</td>
+            </tr>
+        </table>
+    
+        <br>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">📝 SAMPLE QUESTIONS TO EXPECT</th>
+            </tr>
+            <tr>
+                <td>👉 Logical Reasoning</td>
+                <td>Puzzles & Pattern Recognition</td>
+            </tr>
+            <tr>
+                <td>👉 Programming Logic</td>
+                <td>C, Python, Java-based questions</td>
+            </tr>
+            <tr>
+                <td>👉 Debugging</td>
+                <td>Find & fix errors in code</td>
+            </tr>
+            <tr>
+                <td>👉 Aptitude</td>
+                <td>Mathematical and Analytical Questions</td>
+            </tr>
+        </table>
+    
+        <br>
+    
+        <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; text-align: left; border-collapse: collapse; background-color: rgba(0, 0, 0, 0.5); color: #fadd04;">
+            <tr style="background-color: #222; color: #fff;">
+                <th colspan="2">🏆 REWARDS & NEXT ROUND</th>
+            </tr>
+            <tr>
+                <td>🎖️ Top Scorers</td>
+                <td>Qualify for Round 2 – Code Debugging Challenge</td>
+            </tr>
+            <tr>
+                <td>🎖️ Confirmation Mail</td>
+                <td>Sent to qualified participants</td>
+            </tr>
+            <tr>
+                <td>🎖️ Grand Challenge</td>
+                <td>Unlock the ultimate coding puzzle in the final round</td>
+            </tr>
+        </table>
+    
+        <p>Prepare yourself for this high-speed challenge! Time is limited, and accuracy is key. Stay sharp and decode your way to the next round!</p>
+    </div>
+    
+
+    <div class="popup" id="popupRnd2">
+        <span class="close-btn" onclick="closePopup('popupRnd2')">&times;</span>
+        <h2>ROUND 2</h2>
+    
+        <!-- Event Timer -->
+        <p id="timerDisplay">Event starts soon...</p>
+    
+        <!-- Guidelines Section -->
+        <div class="guidelines">
+            <h3>📜 Event Guidelines</h3>
+            
+            <table class="guidelines-table">
+                <tr>
+                    <th>✅ DO’s</th>
+                    <th>❌ DON'T DO’s</th>
+                </tr>
+                <tr>
+                    <td>Follow all event rules strictly.</td>
+                    <td><strong>Copy-Paste is NOT allowed</strong>. If detected, the page will refresh automatically.</td>
+                </tr>
+                <tr>
+                    <td>Submit only one PDF with the correct format.</td>
+                    <td><strong>Tab switching is NOT allowed</strong>. If detected, the page will refresh automatically.</td>
+                </tr>
+                <tr>
+                    <td>Ensure all team members participate actively.</td>
+                    <td>Do not submit multiple PDFs.</td>
+                </tr>
+            </table>
+    
+            <h4>📌 PDF Submission (Mandatory)</h4>
+            <p>Upload a PDF file containing all required images and screenshots.</p>
+    
+    
+            <p><strong>📌 PDF Naming Format:</strong> <br> <em>TeamName_TeamLeaderKFID.pdf</em></p>
+    
+            <p><strong>📢 PDF Must Include:</strong></p>
+            <ul>
+                <li>✅ Images of the decoded locations (Location 1 to Location 5).</li>
+                <li>✅ Proof that you solved the question on the Decode-Dominate website (screenshot showing the fixed code and correct output).</li>
+            </ul>
+    
+            <p><strong>⚠️ Only one PDF file is allowed.</strong> Multiple uploads will not be accepted.</p>
+    
+            <a href="https://forms.gle/dzCSeFD8UzqUzktC7" target="_blank" class="submit-link">📤 Submit Your PDF Here</a>
+    
+            <h4>⏳ Time Restrictions</h4>
+            <table class="time-table">
+                <tr>
+                    <th>Phase</th>
+                    <th>Duration</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td><strong>Code Solving</strong></td>
+                    <td>1 Hour 30 Minutes</td>
+                    <td>Fix the buggy code and reveal the location name.</td>
+                </tr>
+                <tr>
+                    <td><strong>Location Visit</strong></td>
+                    <td>Last 30 Minutes</td>
+                    <td>Travel to the location and take photos.</td>
+                </tr>
+                <tr>
+                    <td><strong>Early Completion</strong></td>
+                    <td>Anytime</td>
+                    <td>If you decode early, you may proceed immediately.</td>
+                </tr>
+                <tr>
+                    <td><strong>🚨 Mandatory Proof</strong></td>
+                    <td>At the Venue</td>
+                    <td>All teams must click a photo of the solved code at the venue.</td>
+                </tr>
+            </table>
+        </div>
+    
+        <!-- Question Selection -->
+        <label for="questionSelect">Choose Question:</label>
+        <select id="questionSelect" onchange="loadQuestion()" disabled>
+            <option value="Question 1">QUESTION 1</option>
+            <option value="Question 2">QUESTION 2</option>
+            <option value="Question 3">QUESTION 3</option>
+            <option value="Question 4">QUESTION 4</option>
+            <option value="Question 5">QUESTION 5</option>
+        </select>
+    
+        <!-- Language Selection -->
+        <label for="languageSelect">Choose Language:</label>
+        <select id="languageSelect" onchange="changeLanguage()" disabled>
+            <option value="" selected>SELECT</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+        </select>
+    
+        <!-- Code Editor -->
+        <textarea id="editor" disabled></textarea>
+    
+        <!-- Run Button -->
+        <button onclick="runCode()" id="runButton" disabled>Run Code</button>
+    
+        <!-- Output Display -->
+        <pre id="output"></pre>
+    </div>
+    
+    <style>
+        #timerDisplay {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+        .guidelines {
+            background: transparent;
+            /* border-left: 5px solid #007bff; */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+    
+        .guidelines h3 {
+            color: #007bff;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    
+        .guidelines-table, .time-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+    
+        .guidelines-table th, .time-table th {
+            
+            color: white;
+            padding: 10px;
+        }
+    
+        .guidelines-table td, .time-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    
+        .submit-link {
+            display: block;
+            background-color: rgba(249, 242, 242, 0.352);
+            color: #007bff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+    
+        .submit-link:hover {
+            background: #007bff;
+            color: rgba(255, 255, 255, 0);
+        }
+    
+        input[type="file"] {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+    
+    <script>
+        const eventStartTime = new Date("2025-02-12T08:20:00"); 
+        const eventEndTime = new Date("2025-02-12T09:30:00");
+    
+        function updateTimer() {
+            const now = new Date();
+            const timerDisplay = document.getElementById("timerDisplay");
+            const isActive = now >= eventStartTime && now <= eventEndTime;
+            
+            if (now < eventStartTime) {
+                const timeLeft = Math.floor((eventStartTime - now) / 1000);
+                timerDisplay.innerText = `Event starts in ${formatTime(timeLeft)}`;
+            } else if (isActive) {
+                const timeLeft = Math.floor((eventEndTime - now) / 1000);
+                timerDisplay.innerText = `Time remaining: ${formatTime(timeLeft)}`;
+                
+                document.getElementById("questionSelect").disabled = false;
+                document.getElementById("languageSelect").disabled = false;
+                document.getElementById("editor").disabled = false;
+                document.getElementById("runButton").disabled = false;
+            } else {
+                timerDisplay.innerText = "Event has ended.";
+                document.getElementById("questionSelect").disabled = true;
+                document.getElementById("languageSelect").disabled = true;
+                document.getElementById("editor").disabled = true;
+                document.getElementById("runButton").disabled = true;
+            }
+        }
+    
+        function formatTime(seconds) {
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    return `${hours.toString().padStart(2, '0')}:` +
+           `${minutes.toString().padStart(2, '0')}:` +
+           `${secs.toString().padStart(2, '0')}`;
+}
+
+    
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+    
+    
+    <!-- Include CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/clike/clike.min.js"></script>
+    
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true,
+            mode: "text/x-c++src",
+            theme: "default"
+        });
+        const questions = {
+  "Question 5": {
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nchar* decodeBase64(const char* in) {\n    const char t[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\";\n    int l = strlen(in), p = 0;\n    if (in[l - 1] == '=') p++;\n    if (in[l - 2] == '=') p++;\n    int dl = (l / 4) * 3 - p;\n\n    char* out = malloc(dl + 1);\n    if (!out) return NULL;\n\n    int i, j = 0, v = 0;\n    for (i = 0; i < l; i += 4) {\n        v = 0;\n        for (int k = 0; k < 4; k++) {\n            v <<= 6;\n            if (in[i + k] == '=') {\n                // TODO: Handle padding appropriately\n            } else {\n                char* pos = strchr(t, in[i + k]);\n                if (pos) {\n                    v |= (pos - t);\n                }\n            }\n        }\n        // TODO: Extract the first byte from the 24-bit value 'v' and store it in out[j++]\n        // TODO: If there is room, extract the second byte from 'v' and store it in out[j++]\n        // TODO: If there is room, extract the third byte from 'v' and store it in out[j++]\n    }\n    out[j] = '\\0';\n    return out;\n}\n\nint main() {\n    const char* m = \"Q0FNUFVTIDMgT0FUIDI=\";\n    char* result = decodeBase64(m);\n    if (result) {\n        printf(\"Output: %s\\n\", result);\n        free(result);\n    } else {\n        printf(\"Error\\n\");\n    }\n    return 0;\n \n }",
+    "cpp": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nstd::string decodeBase64(const std::string &in) {\n    const std::string t = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\";\n    int l = in.size(), p = 0;\n    if (l >= 1 && in[l - 1] == '=') p++;\n    if (l >= 2 && in[l - 2] == '=') p++;\n    int dl = (l / 4) * 3 - p;\n\n    std::string out;\n    out.resize(dl);\n    int j = 0;\n\n    for (int i = 0; i < l; i += 4) {\n        int v = 0;\n        for (int k = 0; k < 4; k++) {\n            v <<= 6;\n            char c = in[i + k];\n            if (c != '=') {\n                size_t pos = t.find(c);\n                if (pos == std::string::npos)\n                    throw std::invalid_argument(\"Invalid character in input.\");\n                v |= pos;\n            }\n        }\n        // TODO: Extract the first byte from 'v' and store it in out[j++]\n        // TODO: If there is room, extract the second byte from 'v' and store it in out[j++]\n        // TODO: If there is room, extract the third byte from 'v' and store it in out[j++]\n    }\n    return out;\n}\n\nint main() {\n    std::string m = \"Q0FNUFVTIDMgT0FUIDI=\";\n    try {\n        std::string result = decodeBase64(m);\n        std::cout << \"Output: \" << result << std::endl;\n    } catch (const std::exception &ex) {\n        std::cerr << \"Error: \" << ex.what() << std::endl;\n    }\n    return 0;\n}",
+    "java": "public class Base64Decoder {\n    public static String decode(String in) {\n        String t = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\";\n        int l = in.length(), p = 0;\n        if (l >= 1 && in.charAt(l - 1) == '=') p++;\n        if (l >= 2 && in.charAt(l - 2) == '=') p++;\n        int dl = (l / 4) * 3 - p;\n        byte[] out = new byte[dl];\n        \n        int j = 0;\n        for (int i = 0; i < l; i += 4) {\n            int v = 0;\n            for (int k = 0; k < 4; k++) {\n                v <<= 6;\n                char c = in.charAt(i + k);\n                if (c != '=') {\n                    int pos = t.indexOf(c);\n                    if (pos < 0)\n                        throw new IllegalArgumentException(\"Invalid character in input.\");\n                    v |= pos;\n                }\n            }\n            // TODO: Extract the first byte from 'v' and store it in out[j++]\n            // TODO: If there is room, extract the second byte from 'v' and store it in out[j++]\n            // TODO: If there is room, extract the third byte from 'v' and store it in out[j++]\n        }\n        return new String(out);\n    }\n    \n    public static void main(String[] args) {\n        String m = \"Q0FNUFVTIDMgT0FUIDI=\";\n        try {\n            String result = decode(m);\n            System.out.println(\"Output: \" + result);\n        } catch (IllegalArgumentException ex) {\n            System.err.println(\"Error: \" + ex.getMessage());\n        }\n    }\n}"
+  },
+      "Question 4": { 
+    "c": "#include <stdio.h>\n#include <string.h>\n#include <ctype.h>\n\nint main() {\n    int arr[] = {75,73,73,84,32,82,79,66,79,84,73,67,83,32,83,79,67,73,69,84,89};\n    int size = sizeof(arr) / sizeof(arr[0]);\n    char secret[50];\n    int i;\n    \n    for(i = 0; i <= size; i++){\n        secret[i] = (char)arr[i];\n    }\n    secret[size] = '\\0';\n    \n    int len = strlen(secret);\n    for(i = 0; i <= len; i++){\n        if(i == 0 || secret[i-1] == \" \"){\n            putchar(toupper(secret[i]));\n        }\n    }\n    \n    return 0;\n}",
+    "cpp": "#include <iostream>\n#include <cstring>\n#include <cctype>\nusing namespace std;\n\nint main() {\n    int arr[] = {75,73,73,84,32,82,79,66,79,84,73,67,83,32,83,79,67,73,69,84,89};\n    int size = sizeof(arr) / sizeof(arr[0]);\n    char secret[50];\n    \n    for (int i = 0; i <= size; i++){\n        secret[i] = char(arr[i]);\n    }\n    secret[size] = '\\0';\n    \n    int len = strlen(secret);\n    for (int i = 0; i <= len; i++){\n        if(i == 0 || secret[i-1] == \" \"){\n            cout << (char)toupper(secret[i]);\n        }\n    }\n    \n    return 0;\n}",
+    "java": "public class Main {\n    public static void main(String[] args) {\n        int[] arr = {75,73,73,84,32,82,79,66,79,84,73,67,83,32,83,79,67,73,69,84,89};\n        int size = arr.length;\n        char[] secret = new char[50];\n        \n        for (int i = 0; i <= size; i++){\n            secret[i] = (char)arr[i];\n        }\n        secret[size] = '\\0';\n        \n        String str = new String(secret);\n        int len = str.length();\n        for (int i = 0; i <= len; i++){\n            if(i == 0 || str.charAt(i-1) == \" \".charAt(0)){\n                System.out.print(Character.toUpperCase(str.charAt(i)));\n            }\n        }\n    }\n}"
+},
+"Question 1": {
+        "c": "#include <stdio.h>\nint main() {\n    char word1[] = { 75, 73, 73, 84 };\n    char word2[] = { 45, 75, 73, 83, 83, '\\0' };\n    char word3[] = { 65, 114, 99, 104, 101, 114, 121 };\n    char suffix[] = { 32, 70, 105, 101, 108, 100, '\\0' };\n    printf(\"%d %d %d %d\\n\", word1, word2, word3, suffix);\n    return;\n}",
+        
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    char word1[] = { 75, 73, 73, 84 };\n    char word2[] = { 45, 75, 73, 83, 83 };\n    char word3[] = { 65, 114, 99, 104, 101, 114, 121, '\\0' };\n    char suffix[] = { 32, 70, 105, 101, 108, 100, '\\0' };\n    cout << word1 << word2 << word3 << suffix << endl;\n    return;\n}",
+        
+        "java": "public class Main {\n    public static void main(String[] args) {\n        char[] word1 = { 75, 73, 73, 84 };\n        char[] word2 = { 45, 75, 73, 83, 83 };\n        char[] word3 = { 65, 114, 99, 104, 101, 114, 121 };\n        char[] suffix = { 32, 70, 105, 101, 108, 100 };\n        System.out.println(word1 + word2 + word3 + suffix);\n        int x = \"string\";\n    }\n}"
+    },
+    "Question 2": {
+        "c": "#include <stdio.h>\nint main() {\n    char loc[] = \"KRFNHB&VWDGLXP&NLlw\";\n    printf(\"Decoding location...\\n\");\n    for (int i = 0; loc[i] != '\\0'; i++) {\n        if (loc[i] == '&') loc[i] = ' ';\n        else if (loc[i] >= 'Z' && loc[i] <= 'A') loc[i] = ((loc[i] - 'A' - 2 + 26) % 26) + 'A';\n        else if (loc[i] >= 'z' && loc[i] <= 'a') loc[i] = ((loc[i] - 'a' - 4 + 26) % 26) + 'a';\n    }\n    printf(\"Location: %s\\n\", loc);\n    return 0;\n}",
+        "cpp": "#include <iostream>\nusing namespace std;\nint main() {\n    string loc = \"KRFNHB&VWDGLXP&NLlw\";\n    cout << \"Decoding location...\" << endl;\n    for (int i = 0; i < loc.length(); i++) {\n        if (loc[i] == '&') loc[i] = ' ';\n        else if (loc[i] >= 'Z' && loc[i] <= 'A') loc[i] = ((loc[i] - 'A' - 5 + 26) % 26) + 'A';\n        else if (loc[i] >= 'z' && loc[i] <= 'a') loc[i] = ((loc[i] - 'a' - 2 + 26) % 26) + 'a';\n    }\n    cout << \"Location: \" << loc << endl;\n    return 0;\n}",
+        "java": "public class LocationFinder {\n    public static void main(String[] args) {\n        String loc = \"KRFNHB&VWDGLXP&NLlw\";\n        System.out.println(\"Decoding location...\");\n        StringBuilder decoded = new StringBuilder();\n        for (int i = 0; i < loc.length(); i++) {\n            char ch = loc.charAt(i);\n            if (ch == '&') decoded.append(' ');\n            else if (ch >= 'Z' && ch <= 'A') decoded.append((char) (((ch - 'A' - 1 + 26) % 26) + 'A'));\n            else if (ch >= 'z' && ch <= 'a') decoded.append((char) (((ch - 'a' - 5 + 26) % 26) + 'a'));\n            else decoded.append(ch);\n        }\n        System.out.println(\"Location: \" + decoded.toString());\n    }\n}"
+    },
+
+    "Question 3": {
+        "c": "#include <stdio.h>\n#include <string.h>\n\nvoid decrypt(char text[]) {\n    for (int i = 0 i < strlen(text); i++) \n    {\n        char c = text[i];\n        if (c >= 'B' && c <= 'Z') \n            c = c + 1;\n        else if (c == 'A') \n            c = 'Y';\n        text[i] = c;\n    }\n}\n\nint main() {\n    char encrypted_text[] = \"LJET XBUFS UBOL\";  \n    decrypt(encrypted_text);\n    printf(\"Decrypted Location: %s\\n\") \n    return 0;\n}",
+
+        "cpp": "#include <iostream>\nusing namespace std;\n\nstring decrypt(string text) {\n    string result = \"\";\n    for (int i = 0 i < text.length(); i++) {\n        char c = text[i];\n        if (c >= 'B' && c <= 'Z') \n            c = c + 1;\n        else if (c == 'A') \n            c = 'Y';\n        result += c;\n    }\n    return reslt;\n}\n\nint main() {\n    string encrypted_text = \"LJET XBUFS UBOL\" \n    string location = decrypt(encrypted_text);\n    cout << \"Decrypted Location: \" << location << endl \n    return 0;\n}",
+
+        "java": "public class Decryptor {\n    public static String decrypt(String text) {\n        String result = \"\";\n        for (int i = 0; i < text.length() i++) {\n            char c = text.charAt(i);\n            if (c >= 'B' && c <= 'Z') \n                c = (char) (c + 1);\n            else if (c == 'A') \n                c = 'Y';\n            rsult += c;\n        }\n        return result;\n    }\n\n    public static void main(String[] args) {\n        String encryptedText = \"LJET XBUFS UBOL\";\n        String location = decrypt(encryptedText);\n        System.out.println(\"Decrypted Location: \" location);\n    }\n}"
+    }
+        };
+    
+        function loadQuestion() {
+            const selectedQuestion = document.getElementById("questionSelect").value;
+            const selectedLanguage = document.getElementById("languageSelect").value;
+            editor.setValue(questions[selectedQuestion][selectedLanguage]);
+        }
+    
+        function changeLanguage() {
+            var lang = document.getElementById("languageSelect").value;
+            var mode = lang === "java" ? "text/x-java" : "text/x-csrc";
+            editor.setOption("mode", mode);
+            loadQuestion();
+        }
+        function runCode() {
+    const code = editor.getValue();
+    const language = document.getElementById("languageSelect").value;
+
+    if (!language) {
+        alert("Please select a language before running the code!");
+        return;
+    }
+
+    const langMap = { "c": "c", "cpp": "cpp", "java": "java" };
+    const selectedLang = langMap[language];
+
+    fetch("https://emkc.org/api/v2/piston/execute", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            language: selectedLang,
+            version: "*",
+            files: [{ content: code }]
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById("output").innerText = data.run.output || "Error executing code";
+    })
+    .catch(error => {
+        document.getElementById("output").innerText = "Execution failed!";
+    });
+}
+
+    
+        document.addEventListener("copy", function (event) {
+    event.preventDefault();
+    alert("Copying is not allowed!");
+    location.reload();
+});
+
+document.addEventListener("paste", function (event) {
+    event.preventDefault();
+    alert("Pasting is not allowed!");
+    location.reload();
+});
+
+        
+    </script>
+    
+    
+
+    <div class="popup" id="popupRnd3">
+        <span class="close-btn" onclick="closePopup('popupRnd3')">&times;</span>
+        <h2>ROUND 3</h2>
+        <p>The final round will test your ability to hack into and secure a simulated system.</p>
+    </div>
+
+    <div class="popup" id="popupAboutUs">
+        <span class="close-btn" onclick="closePopup('popupAboutUs')">&times;</span>
+        <h2 class="glitch">ABOUT US</h2>
+        <p>We are a group of tech enthusiasts dedicated to pushing the limits of cybersecurity and coding.</p>
+        <div class="team-container" id="teamContainer"></div>
+    </div>
+    
+    <style>
+        /* body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        } */
+        /* .popup {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 20px #0f0;
+            border-radius: 10px;
+        } */
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .box {
+            width: 280px;
+            height: 350px;
+            perspective: 1000px;
+        }
+        .box-inner {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s ease-in-out;
+            position: relative;
+        }
+        .box:hover .box-inner {
+            transform: rotateY(180deg);
+        }
+        .box-front, .box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            border: 2px solid #0f0;
+            box-shadow: 0 0 15px #00ff00;
+            overflow: hidden;
+        }
+        .box-front {
+            background: linear-gradient(145deg, #002200, #000800);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-back {
+            background: linear-gradient(145deg, #001100, #000500);
+            transform: rotateY(180deg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .image-wrapper {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 12px #0f0;
+        }
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box-desc {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 10px;
+            color: #0f0;
+        }
+        .box-role {
+            font-size: 1em;
+            color: #00ff00;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social a {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(to right, #00ff00, #006600);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: #fff;
+            transition: all .3s ease;
+        }
+        .social a img {
+            width: 24px;
+            height: 24px;
+        }
+        .social a:hover {
+            background: #fff;
+        }
+    </style>
+    
+<script>
+    const hackers = [
+    { 
+        name: "AVANISH SINGH CHAUHAN", 
+        role: "", 
+        image: "avanish.jpg", 
+        social: { ig: "https://www.instagram.com/_avanish___chauhan_", ln: "https://www.linkedin.com/in/avanish-chauhan-99aa6934a" }
+    },
+    { 
+        name: "REHAN SUMAN", 
+        role: "", 
+        image: "rehan.jpg", 
+        social: { ig: "https://www.instagram.com/r_e_z_o_s_nd?igsh=MTQ1aWt4bGk2cjN4aw==", ln: "https://www.linkedin.com/in/rezosnd/" }
+    },
+    { 
+        name: "HIMANSHU RAJ", 
+        role: "", 
+        image: "himanshu.jpg", 
+        social: { ig: "https://www.instagram.com/himanshuraj2517_?utm_source=qr&igsh=ZTFkdDF1Mjk3OWJ0", ln: "https://www.linkedin.com/in/himanshuraj7114?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
+    },
+    { 
+        name: "PREETESH CHAUDHARY", 
+        role: "", 
+        image: "preetesh.jpg", 
+        social: { ig: "https://www.instagram.com/preetesh15032006?igsh=MTM4ZXptcTFrcnRteA==", ln: "#" }
+    },
+    { 
+        name: "SAPTAK DAS", 
+        role: "", 
+        image: "SAPTAK.jpg", 
+        social: { ig: "https://www.instagram.com/s.saptak6?igsh=MXZ4eTZueDkzMWlpOA==", ln: "https://www.linkedin.com/in/saptak-das-as1r2i3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " }
+    },
+
+    { 
+        name: "RAHUL JHA", 
+        role: "", 
+        image: "RAHUL.jpg", 
+        social: { ig: "https://www.instagram.com/rahul10.___", ln: "https://www.linkedin.com/in/rahul-jha-96a953311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " }
+    },
+    { 
+        name: "AMAN THAKUR", 
+        role: "", 
+        image: "aman.jpg", 
+        social: { ig: "https://www.instagram.com/_amantkr_", ln: "https://www.linkedin.com/in/amankumarthakur" }
+    },
+    { 
+        name: "KANISHKA", 
+        role: "", 
+        image: "kanishka.jpg", 
+        social: { ig: "https://www.instagram.com/___serenity0", ln: "#" }
+    },
+    { 
+        name: "KUMAR SHIVAM", 
+        role: "", 
+        image: "kumar.jpg", 
+        social: { ig: "https://www.instagram.com/kumarshivam_17?igsh=ZjJyYThqNGYwajVm", ln: "#" }
+    },
+    { 
+        name: "DIVYANSHU RAJ", 
+        role: "", 
+        image: "divyanshu.jpg", 
+        social: { ig: "https://www.instagram.com/div._1506", ln: "#" }
+    },
+    
+];
+
+const socialIcons = {
+    ig: "insta.png",
+    ln: "link.png"
+};
+
+const teamContainer = document.getElementById("teamContainer");
+teamContainer.innerHTML = hackers.map(hacker => `
+    <div class='box'>
+        <div class='box-inner'>
+            <div class='box-front'>
+                <div class='image-wrapper'>
+                    <img src='${hacker.image}' alt='${hacker.name}'>
+                </div>
+                <div class='box-desc'>${hacker.name}</div>
+                <div class='box-role'>${hacker.role}</div>
+            </div>
+            <div class='box-back'>
+                <h5>${hacker.name}</h5>
+                <p>${hacker.role}</p>
+                <div class='social'>
+                    <a href="${hacker.social.ig}" target="_blank"><img src="${socialIcons.ig}" alt="Instagram"></a>
+                    <a href="${hacker.social.ln}" target="_blank"><img src="${socialIcons.ln}" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+`).join('');
+
+</script>
+       
+    
+
+    <audio id="click-sound" src="click-sound.mp3" preload="auto"></audio>
+
+    
+    <script src="script.js"></script>
+    <script>
+        (function() {
+          // 1️⃣ Detect DevTools Opened
+          function checkDevTools() {
+            let devtools = window.outerWidth - window.innerWidth > 160 || window.outerHeight - window.innerHeight > 160;
+            
+            if (devtools) {
+              document.body.innerHTML = '<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: red; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">DevTools Detected! Page will refresh...</div>';
+              setTimeout(() => location.reload(), 2000);
+            }
+          }
+      
+          setInterval(checkDevTools, 500);
+      
+          // 2️⃣ Block Right-Click (Context Menu)
+          document.addEventListener('contextmenu', event => event.preventDefault());
+      
+          // 3️⃣ Block DevTools Keyboard Shortcuts
+          document.addEventListener('keydown', function(event) {
+            if (
+              event.keyCode == 123 || // F12
+              (event.ctrlKey && event.shiftKey && (event.keyCode == 73 || event.keyCode == 74)) || // Ctrl+Shift+I / Ctrl+Shift+J
+              (event.ctrlKey && event.keyCode == 85) // Ctrl+U (View Source)
+            ) {
+              alert('DevTools is not allowed!');
+              event.preventDefault();
+              location.reload();
+            }
+          });
+      
+          // 4️⃣ Detect DevTools Using Console Trick
+          setInterval(function() {
+            let before = new Date().getTime();
+            debugger;
+            let after = new Date().getTime();
+            if (after - before > 100) {
+              document.body.innerHTML = '<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: red; color: white; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">DevTools Detected! Page will refresh...</div>';
+              setTimeout(() => location.reload(), 2000);
+            }
+          }, 1000);
+        })();
+      </script>
+      
+</body>
+</html>
