@@ -1,3 +1,9 @@
+setInterval(() => {
+    if (window.outerWidth - window.innerWidth > 200 || 
+        window.outerHeight - window.innerHeight > 200) {
+      window.location.href = "https://google.com"; // Redirect
+    }
+  }, 1000);
 document.addEventListener("DOMContentLoaded", function () {
     const textElem = document.querySelector(".hacking-animation__text");
     const overlayElem = document.querySelector("#overlayText");
