@@ -668,15 +668,73 @@ document.addEventListener("paste", function (event) {
 
     <div class="popup" id="popupRnd3">
         <span class="close-btn" onclick="closePopup('popupRnd3')">&times;</span>
-        <h2>ROUND 3</h2>
-        <p>The final round will test your ability to hack into and secure a simulated system.</p>
-    </div>
-
-    <div class="popup" id="popupAboutUs">
-        <span class="close-btn" onclick="closePopup('popupAboutUs')">&times;</span>
-        <h2 class="glitch">ABOUT US</h2>
-        <p>We are a group of tech enthusiasts dedicated to pushing the limits of cybersecurity and coding.</p>
-        <div class="team-container" id="teamContainer"></div>
+        
+        <h2>🔥 ROUND 3: Web Cloning Challenge 🔥</h2>
+        
+        <p>Welcome to the final challenge! Your task is to **clone a given website** as accurately as possible.  
+           You are allowed to use **AI tools and web resources** to assist in cloning.</p>
+    
+        <!-- Assets & Submission Links -->
+        <div class="links">
+            <p>📂 <strong>Assets Folder:</strong> 
+                <a href="https://drive.google.com/drive/folders/12ace0Y34IjmDvgr4q63fH1aFxrZkc_H9?usp=sharing" target="_blank">
+                    Click here to access all assets
+                </a>
+            </p>
+            <p>📤 <strong>Submission Link:</strong>  
+                <a href="https://drive.google.com/drive/folders/1o5HneEUK2eY2ng9oFTFPTE7Dv3b5ASZO" target="_blank">
+                    Submit your cloned website
+                </a>  
+                <br>🔹 **Format:** `TEAMNAME_LEADERNAME_FESTID`
+            </p>
+        </div>
+    
+        <!-- Live Timer -->
+        <div class="timer-box">
+            <p>🕒 <strong>Round 3 Status:</strong> <span id="roundStatus">Loading...</span></p>
+            <p>⏳ <strong>Time Left:</strong> <span id="countdown">Calculating...</span></p>
+        </div>
+    
+        <!-- Scoring Table -->
+        <table class="score-table">
+            <tr>
+                <th>Criteria</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>🎯 Accuracy of Cloning</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>💡 Code Quality & Structure</td>
+                <td>20</td>
+            </tr>
+            <tr class="total">
+                <td><strong>🏆 Total</strong></td>
+                <td><strong>40</strong></td>
+            </tr>
+        </table>
+    
+        <!-- Instructions -->
+        <h3>📌 Instructions</h3>
+        <table class="instructions-table">
+            <tr>
+                <th>✅ Allowed</th>
+                <th>❌ Not Allowed</th>
+            </tr>
+            <tr>
+                <td>✔ Use AI tools (ChatGPT, Copilot, etc.)</td>
+                <td>❌ Directly copying from inspect element</td>
+            </tr>
+            <tr>
+                <td>✔ Refer to online resources</td>
+                <td>❌ Submitting incomplete projects</td>
+            </tr>
+            <tr>
+                <td>✔ Clean & structured code</td>
+                <td>❌ Plagiarism (exact copy from templates)</td>
+            </tr>
+        </table>
     </div>
     
     <style>
