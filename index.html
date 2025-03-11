@@ -30,6 +30,7 @@
                 <li><a href="#" id="rnd1">ROUND 1</a></li>
                 <li><a href="#" id="rnd2">ROUND 2</a></li>
                 <li><a href="#" id="rnd3">ROUND 3</a></li>
+                <li><a href="#" id="certificateBtn" onclick="openPopup('popupCertificate')">DOWNLOAD CERTIFICATE</a></li>
                 <li><a href="#" id="aboutUs">ABOUT US</a></li>
             </ul>
         </nav>
@@ -513,7 +514,7 @@
         }
     
         input[type="file"] {
-            display: block;4
+            display: block;
             margin: 10px 0;
         }
     </style>
@@ -736,6 +737,12 @@ document.addEventListener("paste", function (event) {
             </tr>
         </table>
     </div>
+    <div class="popup" id="popupAboutUs">
+        <span class="close-btn" onclick="closePopup('popupAboutUs')">&times;</span>
+        <h2 class="glitch">ABOUT US</h2>
+        <p>We are a group of tech enthusiasts dedicated to pushing the limits of cybersecurity and coding.</p>
+        <div class="team-container" id="teamContainer"></div>
+    </div>
     
     <style>
         /* body {
@@ -846,7 +853,210 @@ document.addEventListener("paste", function (event) {
             background: #fff;
         }
     </style>
-    
+   <div class="popup" id="popupCertificate">
+    <span class="close-btn" onclick="closePopup('popupCertificate')">&times;</span>
+    <h2 class="glitch">🌟 Success is not final; failure is not fatal: It is the courage to continue that counts. 🌟</h2>
+    <p class="message">
+        You have successfully completed your mission at <strong>Decode & Dominate</strong>!  
+        Enter your Name below to find your Paticipation certificate.  
+    </p>
+
+    <input type="text" id="nameInput" placeholder="Enter Your Name">
+    <button onclick="searchCertificate()">Search</button>
+
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+        <p>Searching...</p>
+    </div>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    const API_URL = "https://script.google.com/macros/s/AKfycbyEqfzVHBwHOy3Eg-i-0C-ccgzVwFOaVUpVq-dxS_L8Va52mY7K1C-PKZqbDC9WzoRx/exec";
+    let confettiActive = false;
+
+    function createConfetti() {
+        if (confettiActive) return;
+        confettiActive = true;
+
+        let duration = 60000; // 1 minute
+        let endTime = Date.now() + duration;
+
+        function launchConfetti() {
+            if (!confettiActive) return;
+            if (Date.now() < endTime) {
+                for (let i = 0; i < 50; i++) { 
+                    let confetti = document.createElement("div");
+                    confetti.classList.add("confetti");
+                    confetti.style.left = Math.random() * 100 + "vw";
+                    confetti.style.backgroundColor = randomColor();
+                    confetti.style.animationDuration = (Math.random() * 3 + 2) + "s";
+                    document.body.appendChild(confetti);
+                    setTimeout(() => confetti.remove(), 5000);
+                }
+                setTimeout(launchConfetti, 200);
+            }
+        }
+
+        function randomColor() {
+            const colors = ["#ff0000", "#ff7300", "#ffeb00", "#00ff00", "#00ffee", "#006eff", "#8000ff", "#ff00b3"];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        launchConfetti();
+    }
+
+    function stopConfetti() {
+        confettiActive = false; 
+        document.querySelectorAll('.confetti').forEach(el => el.remove());
+    }
+
+    function getCustomMessage(name) {
+        const messages = [
+            `🎉 Congratulations, ${name}! Your coding journey is just beginning! 🚀`,
+            `🏆 Well done, ${name}! Your problem-solving skills are outstanding! 💡`,
+            `💻 Great work, ${name}! Keep coding and keep shining! ✨`,
+            `🔥 Bravo, ${name}! You’ve cracked the code and conquered the challenge! 🎖️`,
+            `🌍 Amazing, ${name}! The world needs more problem-solvers like you! 🏅`
+        ];
+        return messages[Math.floor(Math.random() * messages.length)];
+    }
+
+    async function searchCertificate() {
+        let nameInput = document.getElementById("nameInput").value.trim().toLowerCase();
+        let resultDiv = document.getElementById("result");
+        let loadingDiv = document.getElementById("loading");
+
+        if (!nameInput) {
+            resultDiv.innerHTML = "<p style='color:red;'>Please enter your name!</p>";
+            return;
+        }
+
+        resultDiv.innerHTML = "";
+        loadingDiv.classList.remove("hidden");
+
+        setTimeout(async () => {
+            try {
+                let response = await fetch(API_URL);
+                let data = await response.json();
+
+                let matches = data.filter(entry => entry.name.toLowerCase().includes(nameInput));
+
+                if (matches.length > 0) {
+                    let certificateHTML = "";
+
+                    matches.forEach(match => {
+                        let message = getCustomMessage(match.name);
+                        certificateHTML += `
+                            <div class="certificate-box">
+                                <p><strong>Name:</strong> ${match.name}</p>
+                                <p><strong>Email:</strong> ${match.email}</p>
+                                <p><strong>Round 1 Marks:</strong> ${match.marks}</p>
+                                <p>${message}</p>
+                                <a href="${match.link}" target="_blank">
+                                    <button>Download Certificate</button>
+                                </a>
+                            </div>
+                        `;
+                    });
+
+                    resultDiv.innerHTML = certificateHTML;
+                    createConfetti();
+                } else {
+                    resultDiv.innerHTML = "<p style='color:red;'>Certificate Not Found</p>";
+                    stopConfetti();
+                }
+            } catch (error) {
+                resultDiv.innerHTML = "<p style='color:red;'>Error fetching data</p>";
+                stopConfetti();
+            } finally {
+                loadingDiv.classList.add("hidden");
+            }
+        }, 40);
+    }
+</script>
+
+<style>
+    /* .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        width: 400px;
+        color: white;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        display: none;
+    } */
+    .glitch {
+        font-size: 22px;
+        color: #FFD700;
+    }
+    .message {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #FFD700;
+    }
+    input {
+        padding: 10px;
+        width: 300px;
+        border: 2px solid #FFD700;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    button {
+        padding: 10px 15px;
+        cursor: pointer;
+        background: #FFD700;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .hidden {
+        display: none;
+    }
+    .certificate-box {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 15px;
+        margin: 10px auto;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+        backdrop-filter: blur(10px);
+    }
+    .confetti {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        opacity: 0.8;
+        animation: fall linear infinite;
+    }
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+        100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+    }
+    .spinner {
+        width: 40px;
+        height: 40px;
+        border: 5px solid #FFD700;
+        border-top: 5px solid transparent;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 10px auto;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
 <script>
     const hackers = [
     { 
@@ -1002,3 +1212,4 @@ teamContainer.innerHTML = hackers.map(hacker => `
       
 </body>
 </html>
+
